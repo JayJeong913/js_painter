@@ -1,0 +1,65 @@
+@import url(reset.css);
+
+body {
+    background-color: #f6f9fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;          /* 수직 정렬 */
+    flex-direction: column; /* 정렬 방향 : 수직으로, 위에서 밑으로 */
+    align-items: center;    /* 플렉스 요소는 플렉스 컨테이너의 가운데에 배치 */
+    padding: 50px 0px;
+}
+
+.canvas {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.controls {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls__btns {
+    margin-bottom: 25px;
+}
+
+.controls__btns button{
+    all: unset; /* 버튼 기본 디자인 사라짐 */
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase; /* 텍스트를 모두 대문자로 바꾼다 */
+    font-weight: 800;   /* 폰트의 굵기 */
+    font-size: 12px;
+}
+
+.controls__btns button:active{
+    transform: scale(0.98);  /* 클릭하여 활성화될 때 버튼이 작아졌다가 원래 상태로 돌아옴 */
+}
+
+.controls .controls__colors{
+    display: flex;
+}
+
+.controls__colors .controls__color {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+    cursor : pointer;
+}
+
+.controls .controls__range {
+    margin-bottom: 30px;
+}
